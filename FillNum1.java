@@ -1,5 +1,6 @@
 /**
   * @author wang_zexin
+£¿£¿£¿£¿
 **/
 public class FillNum1 extends Thread{
 	private static int n = 111;
@@ -8,7 +9,7 @@ public class FillNum1 extends Thread{
 	private static int cc=n*n;
 
 	public void run() {
-		super.run();
+		super.run();gjgjgj
 	}
 
 	public static void main(String[] args) throws InterruptedException {
