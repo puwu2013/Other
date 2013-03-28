@@ -1,6 +1,8 @@
-package sort;
+package test;
 
 import org.junit.Test;
+
+import sort.SortUtil;
 
 public class SortUtilTest {
 
