@@ -15,7 +15,7 @@ public class SortUtil {
 	 * 
 	 * @param array
 	 */
-	public void BubbleSort(Integer[] array) {
+	public void bubbleSort(Integer[] array) {
 		int length = array.length;
 		int temp;
 		for (int i = 0; i < length; i++) {
@@ -38,7 +38,7 @@ public class SortUtil {
 	 * 
 	 * @param array
 	 */
-	public void SelectSort(Integer[] array) {
+	public void selectSort(Integer[] array) {
 		int length = array.length;
 		int minLocation = 0;
 		int tempMin;
@@ -56,7 +56,26 @@ public class SortUtil {
 			array[minLocation] = array[i];
 			array[i] = tempMin;
 		}
+		int a = 5;
+		int b = a++ + 6;
+		System.out.println(a+" " + b);
+		int c = a++ + 6;
+		System.out.println(a+" " + b + " " + c);
 		printAfterSorted(array);
+	}
+	
+	public void stringSort(String str){
+		for(int i=0;i<str.length();i++){
+			String maxStr = String.valueOf(str.charAt(i));
+			int index = i;
+			for(int j=i+1;j<str.length();j++){
+				String temp = String.valueOf(str.charAt(j));
+				if(maxStr.compareTo(temp) < 0){
+					maxStr = temp;
+					index = j;
+				}
+			}
+		}
 	}
 	
 	public void printAfterSorted(Integer[] array){

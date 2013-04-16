@@ -11,12 +11,12 @@ public class SortUtilTest {
 	
 	@Test
 	public void testBubbleSort() {
-		sortUtil.BubbleSort(array);
+		sortUtil.bubbleSort(array);
 	}
 
 	@Test
 	public void testSelectSort() {
-		sortUtil.SelectSort(array);
+		sortUtil.selectSort(array);
 	}
 	
 }
